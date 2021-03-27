@@ -77,6 +77,7 @@ pub fn main() void {
 }
 
 fn printSecondLine() void {
+    // This can be null or undefined. I don't like that at all... it should only be allowed to be null.
     var second_line2: ?*const [18]u8 = undefined;
     second_line2 = "even death may die";
 
